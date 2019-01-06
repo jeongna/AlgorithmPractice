@@ -22,5 +22,12 @@
         android:layout_height="wrap_content"
         android:text="1번. 두 숫자의 합 구하기"/>
 
+    <Button
+        android:id="@+id/question02Btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2번. 다양한 형태의 별 찍기"/>
+
 
 </LinearLayout>
