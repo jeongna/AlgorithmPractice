@@ -8,6 +8,7 @@
     tools:context=".Question02Activity">
 
     <EditText
+        android:id="@+id/lineNumEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -18,23 +19,27 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/printStart01Btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="정방향 좌측"
             android:layout_weight="1"/>
         <Button
+            android:id="@+id/printStart02Btn"
             android:layout_width="0dp"
             android:text="정방향 우측"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/printStart03Btn"
             android:layout_width="0dp"
             android:text="역방향 좌측"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/printStart04Btn"
             android:layout_width="0dp"
             android:text="역방향 우측"
             android:layout_height="wrap_content"
@@ -43,11 +48,20 @@
 
     </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="별이 출력됩니다."
-        android:textSize="16sp"/>
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/resultTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="별이 출력됩니다."
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
