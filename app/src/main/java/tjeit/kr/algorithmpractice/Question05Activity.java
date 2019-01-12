@@ -224,9 +224,9 @@ public class Question05Activity extends BaseActivity {
         }
 
 //        임시로 값을 확인
-        String temp = String.format("%d%d%d", questionIntArray[0], questionIntArray[1], questionIntArray[2]);
-
-        numInputEdt.setText(temp);
+//        String temp = String.format("%d%d%d", questionIntArray[0], questionIntArray[1], questionIntArray[2]);
+//
+//        numInputEdt.setText(temp);
 
     }
 

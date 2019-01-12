@@ -21,10 +21,11 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:layout_marginLeft="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/speech_bubble"
-                android:scaleType="fitXY"/>
+                android:src="@drawable/computer_message_background"
+                />
 
             <TextView
                 android:id="@+id/computerMsgTxt"
@@ -53,7 +54,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/speech_bubble_user"
+                android:src="@drawable/user_message_background"
                 android:scaleType="fitXY"/>
 
             <TextView
