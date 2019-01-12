@@ -63,6 +63,19 @@ public class Question04Activity extends BaseActivity {
         eightBtn.setOnClickListener(numberClickListener);
         nineBtn.setOnClickListener(numberClickListener);
 
+        clearBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                초기화 버튼이 눌리면, 현재 입력된 숫자를 0으로 변환.
+
+                currentNumber = 0;
+
+//                화면에도 초기 입력상태로 변경.
+                resultTxt.setText("버튼을 눌러 숫자 입력");
+
+            }
+        });
+
     }
 
     @Override
