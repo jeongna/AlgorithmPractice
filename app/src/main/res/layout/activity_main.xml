@@ -36,5 +36,12 @@
         android:layout_height="wrap_content"
         android:text="3번. 구구단 출력하기"/>
 
+    <Button
+        android:id="@+id/question04Btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4번. 간단한 계산기"/>
+
 
 </LinearLayout>
