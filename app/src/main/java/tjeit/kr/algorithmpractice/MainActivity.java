@@ -9,6 +9,7 @@ public class MainActivity extends BaseActivity {
 
     private android.widget.Button question01Btn;
     private Button question02Btn;
+    private Button question03Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,15 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        question03Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, Question03Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override
@@ -48,6 +58,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void bindViews() {
 
+        this.question03Btn = (Button) findViewById(R.id.question03Btn);
         this.question02Btn = (Button) findViewById(R.id.question02Btn);
         this.question01Btn = (Button) findViewById(R.id.question01Btn);
     }
