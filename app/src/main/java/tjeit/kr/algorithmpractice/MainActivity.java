@@ -11,6 +11,7 @@ public class MainActivity extends BaseActivity {
     private Button question02Btn;
     private Button question03Btn;
     private Button question04Btn;
+    private Button question05Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class MainActivity extends BaseActivity {
         question02Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext , Question02Activity.class);
+                Intent intent = new Intent(mContext, Question02Activity.class);
                 startActivity(intent);
             }
         });
@@ -56,6 +57,14 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        question05Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, Question05Activity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -66,6 +75,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void bindViews() {
 
+        this.question05Btn = (Button) findViewById(R.id.question05Btn);
         this.question04Btn = (Button) findViewById(R.id.question04Btn);
         this.question03Btn = (Button) findViewById(R.id.question03Btn);
         this.question02Btn = (Button) findViewById(R.id.question02Btn);
